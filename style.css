@@ -4,6 +4,7 @@ body {
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
+  background: linear-gradient(to bottom right, #030305, #17153B, #2E236C, #a68cf9);
 }
 
 nav {
@@ -26,12 +27,12 @@ nav .profile {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #E4CDFF;
-  box-shadow: 0 0 12px #B19CD9;
+  border: 3px solid #C8ACD6;
+  box-shadow: 0 0 12px #a68cf9;
 }
 
 nav h1 {
-  color: #E4CDFF;
+  color: #C8ACD6;
   font-size: 1.4rem;
   margin: 0;
 }
@@ -51,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #B19CD9;
+  color: #a68cf9;
 }
 
 .hero-text {
@@ -61,14 +62,14 @@ nav a:hover {
 
 .hero-text h2 {
   font-size: 2.5rem;
-  color: #E4CDFF;
+  color: #C8ACD6;
 }
 
 .cta-button {
   margin-top: 20px;
   padding: 12px 28px;
   background: linear-gradient(to right, #B19CD9, #816EA7);
-  color: #292628;
+  color: #030305;
   border: none;
   border-radius: 30px;
   font-weight: bold;
@@ -78,8 +79,8 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background: #E4CDFF;
-  box-shadow: 0 0 15px #E4CDFF;
+  background: #C8ACD6;
+  box-shadow: 0 0 15px #C8ACD6;
   transform: scale(1.05);
 }
 
@@ -91,16 +92,17 @@ nav a:hover {
 
 .section h2 {
   font-size: 2rem;
-  color: #B19CD9;
+  color: #a68cf9;
   margin-bottom: 30px;
 }
 
 .decorated {
-  background: linear-gradient(135deg, rgba(129,110,167,0.12), rgba(41,38,40,0.6));
+  background: rgba(3, 3, 5, 0.7);
   border-radius: 20px;
   padding: 60px 30px;
-  box-shadow: 0 0 20px rgba(177,156,217,0.25);
+  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
   margin-bottom: 60px;
+  backdrop-filter: blur(4px);
 }
 
 .projects {
@@ -111,17 +113,17 @@ nav a:hover {
 
 .project-card {
   flex: 1 1 300px;
-  background-color: #1a1a2e;
+  background-color: #2E236C;
   padding: 20px;
   border-radius: 16px;
   color: #fff;
-  box-shadow: 0 0 10px rgba(177,156,217,0.2);
+  box-shadow: 0 0 15px rgba(200, 172, 214, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(228,205,255,0.3);
+  box-shadow: 0 0 25px rgba(166, 140, 249, 0.3);
 }
 
 .project-img {
@@ -130,16 +132,16 @@ nav a:hover {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
-  box-shadow: 0 0 8px #534278;
+  box-shadow: 0 0 10px #433D8B;
 }
 
 .project-card h3 {
-  color: #E4CDFF;
+  color: #C8ACD6;
   margin-top: 0;
 }
 
 .project-card a {
-  color: #B19CD9;
+  color: #a68cf9;
   text-decoration: underline;
 }
 
@@ -150,6 +152,6 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 30px;
-  background: #1a1a2e;
+  background: #17153B;
   color: #aaa;
 }
