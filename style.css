@@ -10,7 +10,7 @@ body {
 .page-header {
   background: rgba(3, 3, 5, 0.7);
   padding: 20px 40px;
-  margin-bottom: 50px; /* space between header and hero */
+  margin-bottom: 50px;
   border-bottom: 1px solid rgba(166, 140, 249, 0.3);
   box-shadow: 0 2px 8px rgba(166, 140, 249, 0.1);
   border-radius: 20px;
@@ -31,14 +31,14 @@ nav .profile {
 }
 
 .profile-img {
-  width: 180px; /* Larger headshot */
+  width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #C8ACD6;
   box-shadow: 0 0 12px #a68cf9;
-  margin-top: 10px;  /* space above */
-  margin-bottom: 10px; /* space below */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav h1 {
@@ -176,7 +176,6 @@ footer {
   color: #aaa;
 }
 
-/* Consistent contact links color */
 #contact a {
   color: #a68cf9;
   text-decoration: underline;

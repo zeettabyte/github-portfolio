@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zhaire Robinson | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Zhaire Robinson Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     html {
       scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
     }
     .fade-in {
       opacity: 0;
@@ -20,6 +24,73 @@
         opacity: 1;
         transform: translateY(0);
       }
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      padding: 0;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a68cf9;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #a68cf9;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #7b5bd4;
+    }
+    .projects {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: #2E236C;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+      flex: 1;
+    }
+    .project-img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+    }
+    .experience-item {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #17153B;
+      color: #ccc;
     }
   </style>
 </head>
@@ -48,24 +119,20 @@
     </div>
   </section>
 
-  <!-- rest of the sections... -->
-
-
   <section id="projects" class="section decorated fade-in">
     <h2>Featured Projects</h2>
     <div class="projects">
       <div class="project-card">
         <img src="project1.jpg" alt="Screenshot of My PC Design Project" class="project-img" />
-        <h3>Custome PC Design</h3>
+        <h3>Custom PC Design</h3>
         <p>Lab experience designing and documenting the build of a custom high-end PC to meet various needs.</p>
-        <a href="https://replit.com/@zeettabyte" target="_blank">View Project</a>
+        <a href="https://hccfl-my.sharepoint.com/:p:/r/personal/zrobinson12_hawkmail_hccfl_edu/Documents/Lab%20Designing%20a%20Custom%20PC.pptx?web=1" target="_blank">View Project</a>
       </div>
       <div class="project-card">
         <img src="project2.jpg" alt="Screenshot of Takusell project" class="project-img" />
         <h3>Takushell Web Application</h3>
-        <p> TakuShell is a website application I developed to create a spoiler-safe, AI-enhanced, and inclusive space for anime and manga fans..
-        </p>
-        <a href="https://hccfl-my.sharepoint.com/:p:/r/personal/zrobinson12_hawkmail_hccfl_edu/Documents/Lab%20Designing%20a%20Custom%20PC.pptx?web=1" target="_blank">View Project</a>
+        <p>TakuShell is a website application I developed to create a spoiler-safe, AI-enhanced, and inclusive space for anime and manga fans.</p>
+        <a href="https://github.com/zeettabyte/TakuShell_Complete_Prototype" target="_blank">View Project</a>
       </div>
     </div>
   </section>
@@ -73,11 +140,14 @@
   <section id="education" class="section decorated fade-in">
     <h2>Education</h2>
     <div class="experience-item">
-      <h3>Hillsborough Community College</h3>
+         <h2>University of South Florida</h2>
+         <p>
+            Bachelor of Arts – Criminology with a Cybercrime Concentration (Aug 2025 – May 2026)
+        </p>
+      <h2>Hillsborough Community College</h2>
       <p>
         Associate of Science in Information Technology (May 2022 - May 2024)<br />
-        Associate of Arts – Cybersecurity Pathway (May 2024 – Aug 2025)<br />
-        Bachleors of Arts – Criminology with a Cybercrime Concentration (Aug 2025 – May 2026)
+        Associate of Arts – Cybersecurity Pathway (May 2024 – Aug 2025)
       </p>
     </div>
   </section>
@@ -87,8 +157,7 @@
     <div class="experience-item">
       <h3>Cybersecurity Intern – Cyber Security Solutions LLC</h3>
       <p>
-        Hands-on experience with Tier 1 Help Desk Support, AD, CRM systems, EDR tools like SentinelOne, and real-world
-        troubleshooting.
+        Hands-on experience with Tier 1 Help Desk Support, AD, CRM systems, EDR tools like SentinelOne, and real-world troubleshooting.
       </p>
     </div>
     <div class="experience-item">
@@ -107,5 +176,6 @@
   <footer>
     <p>&copy; 2025 Zhaire Robinson</p>
   </footer>
+
 </body>
 </html>
