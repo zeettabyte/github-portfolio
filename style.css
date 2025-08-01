@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, #292628, #1a1a2e);
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -28,7 +27,7 @@ nav .profile {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #E4CDFF;
-  box-shadow: 0 0 10px #B19CD9;
+  box-shadow: 0 0 12px #B19CD9;
 }
 
 nav h1 {
@@ -55,12 +54,9 @@ nav a:hover {
   color: #B19CD9;
 }
 
-.hero {
+.hero-text {
   text-align: center;
-  padding: 100px 20px;
-  background: radial-gradient(ellipse at center, #534278, #292628);
-  color: #fff;
-  position: relative;
+  padding: 60px 20px 100px;
 }
 
 .hero-text h2 {
@@ -100,10 +96,10 @@ nav a:hover {
 }
 
 .decorated {
-  background: linear-gradient(135deg, rgba(129,110,167,0.1), rgba(41,38,40,0.6));
+  background: linear-gradient(135deg, rgba(129,110,167,0.12), rgba(41,38,40,0.6));
   border-radius: 20px;
   padding: 60px 30px;
-  box-shadow: 0 0 15px rgba(177,156,217,0.2);
+  box-shadow: 0 0 20px rgba(177,156,217,0.25);
   margin-bottom: 60px;
 }
 
