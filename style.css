@@ -4,7 +4,7 @@ body {
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
-  background: linear-gradient(to bottom right, #030305, #17153B, #2E236C, #a68cf9);
+  background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305); /* updated gradient */
 }
 
 nav {
@@ -12,19 +12,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: transparent; /* changed from #1a1a2e to transparent */
+  background: transparent; /* blending with header */
   flex-wrap: wrap;
 }
 
 nav .profile {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px; /* increased spacing */
 }
 
 .profile-img {
-  width: 60px;
-  height: 60px;
+  width: 90px;   /* increased size */
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #C8ACD6;
@@ -61,8 +61,9 @@ nav a:hover {
 }
 
 .hero-text h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* smaller subtitle */
   color: #C8ACD6;
+  margin-bottom: 10px;
 }
 
 .cta-button {
