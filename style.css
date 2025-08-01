@@ -7,17 +7,21 @@ body {
   background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);
 }
 
+.page-header {
+  background: rgba(3, 3, 5, 0.7);
+  padding: 20px 40px;
+  margin-bottom: 50px; /* space between header and hero */
+  border-bottom: 1px solid rgba(166, 140, 249, 0.3);
+  box-shadow: 0 2px 8px rgba(166, 140, 249, 0.1);
+  border-radius: 20px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
   background: transparent;
   flex-wrap: wrap;
-}
-
-header.hero nav {
-  margin-bottom: 40px; /* Space between nav and hero-text */
 }
 
 nav .profile {
@@ -27,8 +31,8 @@ nav .profile {
 }
 
 .profile-img {
-  width: 110px; /* Larger headshot */
-  height: 110px;
+  width: 180px; /* Larger headshot */
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #C8ACD6;
@@ -61,15 +65,18 @@ nav a:hover {
   color: #a68cf9;
 }
 
-.hero-text {
-  padding: 0 20px 100px;
-  text-align: center;
-  background: rgba(3, 3, 5, 0.7); /* Same shade as about me card */
-  border-radius: 20px;
+.hero {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
+  padding: 40px 20px;
+}
+
+.hero-text {
+  background: rgba(3, 3, 5, 0.7);
+  border-radius: 20px;
+  padding: 60px 20px 80px;
   box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
-  backdrop-filter: blur(4px);
+  text-align: center;
 }
 
 .hero-text h2 {
@@ -179,3 +186,4 @@ footer {
 #contact a:hover {
   color: #C8ACD6;
 }
+
