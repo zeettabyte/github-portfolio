@@ -16,62 +16,56 @@ nav {
   flex-wrap: wrap;
 }
 
-header.hero nav {
-  margin-bottom: 20px; /* less space below nav for cleaner separation */
-}
-
-nav .profile {
+header.hero {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+  background: rgba(3, 3, 5, 0.7); /* matches .decorated background */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
+  margin-bottom: 60px;
+  padding: 20px 40px;
+}
+
+header.hero .profile {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px; /* total header height */
+  padding: 10px 0;
 }
 
 .profile-img {
-  width: 100px; /* increased from 90px */
-  height: 100px;
+  height: 130px;  /* about 80% of header height */
+  width: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #C8ACD6;
   box-shadow: 0 0 12px #a68cf9;
+  margin-bottom: 10px;
 }
 
-nav h1 {
+header.hero h1 {
   color: #C8ACD6;
-  font-size: 1.6rem; /* slightly larger */
+  font-size: 1.6rem;
   margin: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600; /* bolder */
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #a68cf9;
+  text-align: center;
 }
 
 .hero-text {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  padding: 60px 20px 80px;
+  flex: 1;
+  background: rgba(3, 3, 5, 0.7); /* same as .decorated */
+  border-radius: 20px;
+  padding: 60px 30px;
+  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
+  color: #C8ACD6;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(166, 140, 249, 0.08), rgba(3, 3, 5, 0.2));
-  border-radius: 30px;
-  box-shadow: 0 0 25px rgba(166, 140, 249, 0.15);
 }
 
 .hero-text h2 {
-  font-size: 1.75rem; /* smaller than original hero */
-  color: #C8ACD6;
+  font-size: 1.8rem;
   margin-bottom: 15px;
 }
 
@@ -100,6 +94,8 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* Other styles unchanged from your original CSS */
+/* ...keep your existing styles below here... */
 .section {
   padding: 80px 20px;
   max-width: 1000px;
@@ -170,16 +166,4 @@ footer {
   padding: 30px;
   background: #17153B;
   color: #aaa;
-}
-
-/* Added for consistent link colors in contact section */
-#contact a {
-  color: #a68cf9;
-  text-decoration: underline;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-#contact a:hover {
-  color: #C8ACD6;
 }
