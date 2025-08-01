@@ -72,7 +72,7 @@ nav a:hover {
 }
 
 .hero-text {
-  background: rgba(3, 3, 5, 0.7);
+  background: rgba(157, 79, 193, 0.808);
   border-radius: 20px;
   padding: 60px 20px 80px;
   box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
@@ -186,3 +186,23 @@ footer {
   color: #C8ACD6;
 }
 
+#about {
+  background: rgba(3, 3, 5, 0.7);
+  padding: 60px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
+  margin-bottom: 60px;
+  backdrop-filter: blur(4px);
+}
+
+#about h2 {
+  color: #a68cf9;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+}
