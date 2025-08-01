@@ -22,9 +22,114 @@
       }
     }
     /* Removed floating animation (not used anymore) */
+
+    body {
+      background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+    }
+
+    header.hero {
+      background: rgba(3, 3, 5, 0.7);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
+      backdrop-filter: blur(4px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #C8ACD6;
+      box-shadow: 0 0 12px #a68cf9;
+    }
+
+    nav h1 {
+      color: #C8ACD6;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a68cf9;
+    }
+
+    .hero-text {
+      background: linear-gradient(to bottom, rgba(166, 140, 249, 0.08), rgba(3, 3, 5, 0.2));
+      border-radius: 30px;
+      padding: 60px 20px 80px;
+      margin: 0 auto 50px auto;
+      max-width: 800px;
+      box-shadow: 0 0 25px rgba(166, 140, 249, 0.15);
+      text-align: center;
+    }
+
+    .hero-text h2 {
+      font-size: 1.75rem;
+      color: #C8ACD6;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #a68cf9;
+      color: #030305;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 10px #816EA7;
+    }
+
+    .cta-button:hover {
+      background: #c9b1ff;
+      box-shadow: 0 0 15px #c9b1ff;
+      transform: scale(1.05);
+    }
   </style>
 </head>
-<body style="background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);">
+<body>
   <header class="hero fade-in decorated">
     <nav>
       <div class="profile">
@@ -38,12 +143,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero-text">
-      <h2>Cybersecurity & IT Student</h2>
-      <p>Combining technical strength and creative intuition to build, protect, and innovate.</p>
-      <a class="cta-button" href="#projects">Explore My Projects</a>
-    </div>
   </header>
+
+  <section class="hero-text fade-in">
+    <h2>Cybersecurity & IT Student</h2>
+    <p>Combining technical strength and creative intuition to build, protect, and innovate.</p>
+    <a class="cta-button" href="#projects">Explore My Projects</a>
+  </section>
 
   <section id="about" class="section decorated fade-in">
     <h2>About Me</h2>
@@ -104,3 +210,4 @@
   </footer>
 </body>
 </html>
+
