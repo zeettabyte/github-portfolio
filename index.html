@@ -21,21 +21,14 @@
         transform: translateY(0);
       }
     }
-    .floating {
-      animation: float 6s ease-in-out infinite;
-    }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
+    /* Removed floating animation since profile image no longer uses it */
   </style>
 </head>
 <body style="background: linear-gradient(to bottom right, #030305, #17153B, #2E236C, #a68cf9);">
-  <header class="hero fade-in" style="background: linear-gradient(to right, #534278, #292628);">
+  <header class="hero fade-in decorated">
     <nav>
       <div class="profile">
-        <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img floating">
+        <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img">
         <h1>Zhaire Robinson</h1>
       </div>
       <ul>
@@ -76,19 +69,20 @@
   </section>
 
   <section id="education" class="section decorated fade-in">
-  <h2>Education</h2>
-  <div class="experience-item">
-    <h3>Hillsborough Community College</h3>
-    <p>Associate of Science in Information Technology (May 2022 - May 2024)<br>
-    Associate of Arts – Cybersecurity Pathway (May 2024 – Aug 2025)</p>
-  </div>
-</section>
+    <h2>Education</h2>
+    <div class="experience-item">
+      <h3>Hillsborough Community College</h3>
+      <p>Associate of Science in Information Technology (May 2022 - May 2024)<br>
+      Associate of Arts – Cybersecurity Pathway (May 2024 – Aug 2025)<br>
+      Bachleors of Arts – Criminology with a Cybercrime Concentration (Aug 2025 – May 2026)</p>
+    </div>
+  </section>
 
-<section id="experience" class="section decorated fade-in">
+  <section id="experience" class="section decorated fade-in">
     <h2>Experience</h2>
     <div class="experience-item">
       <h3>Cybersecurity Intern – Cyber Security Solutions LLC</h3>
-      <p>Hands-on experience with AD, CRM systems, EDR tools like SentinelOne, and real-world troubleshooting.</p>
+      <p>Hands-on experience with Tier 1 Help Desk Support, AD, CRM systems, EDR tools like SentinelOne, and real-world troubleshooting.</p>
     </div>
     <div class="experience-item">
       <h3>IT Ambassador – Amazon</h3>

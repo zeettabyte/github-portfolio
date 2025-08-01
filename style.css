@@ -12,7 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #1a1a2e;
+  background: transparent; /* changed from #1a1a2e to transparent */
   flex-wrap: wrap;
 }
 
