@@ -171,3 +171,15 @@ footer {
   background: #17153B;
   color: #aaa;
 }
+
+/* Added for consistent link colors in contact section */
+#contact a {
+  color: #a68cf9;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #C8ACD6;
+}
