@@ -6,12 +6,36 @@
   <title>Zhaire Robinson | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
+  <header class="hero fade-in">
     <nav>
       <div class="profile">
-        <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img">
+        <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img floating">
         <h1>Zhaire Robinson</h1>
       </div>
       <ul>
@@ -28,12 +52,12 @@
     </div>
   </header>
 
-  <section id="about" class="section decorated">
+  <section id="about" class="section decorated fade-in">
     <h2>About Me</h2>
     <p>I’m Zhaire Robinson — a driven Cybersecurity student based in Tampa, FL with hands-on experience in help desk support, customer experience, and IT troubleshooting. Currently studying IT & Cybersecurity at HCC, I’m expanding my skills in scripting, network defense, and system design while staying curious and creative in everything I do.</p>
   </section>
 
-  <section id="projects" class="section decorated">
+  <section id="projects" class="section decorated fade-in">
     <h2>Featured Projects</h2>
     <div class="projects">
       <div class="project-card">
@@ -51,7 +75,7 @@
     </div>
   </section>
 
-  <section id="experience" class="section decorated">
+  <section id="experience" class="section decorated fade-in">
     <h2>Experience</h2>
     <div class="experience-item">
       <h3>Cybersecurity Intern – Cyber Security Solutions LLC</h3>
@@ -63,7 +87,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:Zhairetr@icloud.com">Zhairetr@icloud.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/zhaire-robinson-4573062a9" target="_blank">linkedin.com/in/zhaire-robinson</a></p>
