@@ -25,11 +25,48 @@
         transform: translateY(0);
       }
     }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    nav .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #C8ACD6;
+      box-shadow: 0 0 12px #a68cf9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav h1 {
+      color: #C8ACD6;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    .portfolio-title {
+      color: #C8ACD6;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+      flex: 1;
+      user-select: none;
+    }
     nav ul {
       display: flex;
       list-style: none;
-      gap: 1.5rem;
+      gap: 20px;
       padding: 0;
+      margin: 0;
     }
     nav a {
       color: #ffffff;
@@ -111,6 +148,9 @@
         <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img" />
         <h1>Zhaire Robinson</h1>
       </div>
+
+      <div class="portfolio-title">My Portfolio</div>
+
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -128,7 +168,6 @@
     </div>
   </section>
 
-  <!-- About Section Added -->
   <section id="about" class="section decorated fade-in">
     <h2>About Me</h2>
     <div class="about-card">
@@ -159,11 +198,11 @@
   <section id="education" class="section decorated fade-in">
     <h2>Education</h2>
     <div class="experience-item">
-        <h3>University of South Florida</h3>
-        <p>
-            Bachelor of Arts – Criminology with a Cybercrime Concentration (Aug 2025 – May 2026)
-        </p>
-          <br />
+      <h3>University of South Florida</h3>
+      <p>
+        Bachelor of Arts – Criminology with a Cybercrime Concentration (Aug 2025 – May 2026)
+      </p>
+      <br />
       <h3>Hillsborough Community College</h3>
       <p>
         Associate of Science in Information Technology (May 2022 - May 2024)<br />

@@ -22,6 +22,7 @@ nav {
   align-items: center;
   background: transparent;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav .profile {
@@ -47,11 +48,22 @@ nav h1 {
   margin: 0;
 }
 
+/* New style for "My Portfolio" text */
+.portfolio-title {
+  color: #C8ACD6;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+  user-select: none;  /* Prevent text selection for style */
+}
+
 nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
   padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -72,10 +84,10 @@ nav a:hover {
 }
 
 .hero-text {
-  background: rgba(157, 79, 193, 0.808);
-  border-radius: 20px;
-  padding: 60px 20px 80px;
-  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
+  background: rgba(3, 3, 5, 0.7);
+  border-radius: 40px;
+  padding: 80px 40px 100px;
+  box-shadow: 0 0 40px rgba(166, 140, 249, 0.2);
   text-align: center;
 }
 
