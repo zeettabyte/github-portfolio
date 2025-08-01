@@ -11,57 +11,72 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: transparent;
   flex-wrap: wrap;
-}
-
-header.hero {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  background: rgba(3, 3, 5, 0.7); /* matches .decorated background */
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
-  margin-bottom: 60px;
   padding: 20px 40px;
+  margin-bottom: 40px; /* Space below nav */
+  background: transparent;
 }
 
-header.hero .profile {
-  flex-shrink: 0;
+header.hero nav {
+  margin-bottom: 40px; /* space below nav so nav and hero-text don't merge */
+}
+
+nav .profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 160px; /* total header height */
+  gap: 10px;
+  height: 160px; /* Adjusted height for profile */
   padding: 10px 0;
+  flex-shrink: 0;
 }
 
 .profile-img {
-  height: 130px;  /* about 80% of header height */
+  height: 130px; /* Larger headshot with space above and below */
   width: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #C8ACD6;
   box-shadow: 0 0 12px #a68cf9;
-  margin-bottom: 10px;
 }
 
-header.hero h1 {
-  color: #C8ACD6;
+nav h1 {
   font-size: 1.6rem;
+  color: #C8ACD6;
   margin: 0;
   text-align: center;
 }
 
+nav ul.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+nav ul.nav-links li a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav ul.nav-links li a:hover {
+  color: #a68cf9;
+}
+
 .hero-text {
-  flex: 1;
-  background: rgba(3, 3, 5, 0.7); /* same as .decorated */
+  background: rgba(3, 3, 5, 0.7); /* same as about me card */
   border-radius: 20px;
-  padding: 60px 30px;
   box-shadow: 0 0 20px rgba(166, 140, 249, 0.2);
-  color: #C8ACD6;
+  padding: 60px 30px;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
   text-align: center;
+  color: #C8ACD6;
 }
 
 .hero-text h2 {
@@ -94,8 +109,6 @@ header.hero h1 {
   transform: scale(1.05);
 }
 
-/* Other styles unchanged from your original CSS */
-/* ...keep your existing styles below here... */
 .section {
   padding: 80px 20px;
   max-width: 1000px;
