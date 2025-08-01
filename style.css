@@ -4,7 +4,7 @@ body {
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
-  background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305); /* updated gradient */
+  background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);
 }
 
 nav {
@@ -12,18 +12,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: transparent; /* blending with header */
+  background: transparent;
   flex-wrap: wrap;
+}
+
+header.hero nav {
+  margin-bottom: 40px; /* space below nav so nav and hero-text don't merge */
 }
 
 nav .profile {
   display: flex;
   align-items: center;
-  gap: 20px; /* increased spacing */
+  gap: 20px;
 }
 
 .profile-img {
-  width: 90px;   /* increased size */
+  width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
@@ -56,12 +60,12 @@ nav a:hover {
 }
 
 .hero-text {
+  padding: 0 20px 100px;
   text-align: center;
-  padding: 60px 20px 100px;
 }
 
 .hero-text h2 {
-  font-size: 1.8rem; /* smaller subtitle */
+  font-size: 1.8rem;
   color: #C8ACD6;
   margin-bottom: 10px;
 }
