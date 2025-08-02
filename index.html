@@ -5,140 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zhaire Robinson Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeUp 0.8s ease-out forwards;
-    }
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: transparent;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    nav .profile {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #C8ACD6;
-      box-shadow: 0 0 12px #a68cf9;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    nav h1 {
-      color: #C8ACD6;
-      font-size: 1.4rem;
-      margin: 0;
-    }
-    .portfolio-title {
-      color: #C8ACD6;
-      font-size: 1.3rem;
-      font-weight: 600;
-      text-align: center;
-      flex: 1;
-      user-select: none;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #a68cf9;
-    }
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 60vh;
-      text-align: center;
-    }
-    .cta-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #a68cf9;
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-    .cta-button:hover {
-      background-color: #7b5bd4;
-    }
-    .projects {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .project-card {
-      background: #2E236C;
-      padding: 1rem;
-      border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      max-width: 300px;
-      flex: 1;
-    }
-    .project-img {
-      width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 1rem;
-    }
-    .section {
-      padding: 3rem 1.5rem;
-    }
-    .experience-item {
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #17153B;
-      color: #ccc;
-    }
-    .about-card {
-      background: #2E236C;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      max-width: 700px;
-      margin: 0 auto;
-      color: white;
-    }
-  </style>
 </head>
 <body style="background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);">
 
@@ -154,6 +20,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#categories">Categories</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -191,6 +58,38 @@
         <h3>Takushell Web Application</h3>
         <p>TakuShell is a website application I developed to create a spoiler-safe, AI-enhanced, and inclusive space for anime and manga fans.</p>
         <a href="https://github.com/zeettabyte/TakuShell_Complete_Prototype" target="_blank">View Project</a>
+      </div>
+      <!-- Add your 3rd featured project here -->
+    </div>
+  </section>
+
+  <section id="categories" class="section decorated fade-in">
+    <h2>Project Categories</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Hack the Box Projects</h3>
+        <p>Writeups and walkthroughs for Hack the Box challenges.</p>
+        <a href="hackthebox.html">View Category</a>
+      </div>
+      <div class="project-card">
+        <h3>TryHackMe Projects</h3>
+        <p>Labs and challenges completed on TryHackMe.</p>
+        <a href="tryhackme.html">View Category</a>
+      </div>
+      <div class="project-card">
+        <h3>Cybersecurity Projects</h3>
+        <p>Security configurations, tools, and simulated attacks.</p>
+        <a href="cybersecurity.html">View Category</a>
+      </div>
+      <div class="project-card">
+        <h3>Research & Documentation</h3>
+        <p>Technical documentation and reports on cybersecurity topics.</p>
+        <a href="research.html">View Category</a>
+      </div>
+      <div class="project-card">
+        <h3>Coding Projects</h3>
+        <p>Web, software, and scripting projects.</p>
+        <a href="coding.html">View Category</a>
       </div>
     </div>
   </section>
