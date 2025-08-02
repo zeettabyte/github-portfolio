@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -7,6 +8,12 @@ body {
   background: linear-gradient(to top right, #a68cf9, #2E236C, #17153B, #030305);
 }
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page Header */
 .page-header {
   background: rgba(3, 3, 5, 0.7);
   padding: 20px 40px;
@@ -16,6 +23,7 @@ body {
   border-radius: 20px;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
   justify-content: space-between;
@@ -31,6 +39,7 @@ nav .profile {
   gap: 20px;
 }
 
+/* Profile Image */
 .profile-img {
   width: 180px;
   height: 180px;
@@ -42,22 +51,24 @@ nav .profile {
   margin-bottom: 10px;
 }
 
+/* Navigation Heading */
 nav h1 {
   color: #C8ACD6;
   font-size: 1.4rem;
   margin: 0;
 }
 
-/* New style for "My Portfolio" text */
+/* Portfolio Title */
 .portfolio-title {
   color: #C8ACD6;
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
   flex: 1;
-  user-select: none;  /* Prevent text selection for style */
+  user-select: none;  /* Prevent text selection */
 }
 
+/* Navigation Links */
 nav ul {
   display: flex;
   list-style: none;
@@ -77,6 +88,7 @@ nav a:hover {
   color: #a68cf9;
 }
 
+/* Hero Section */
 .hero {
   max-width: 800px;
   margin: 0 auto 80px;
@@ -97,6 +109,7 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+/* Call To Action Button */
 .cta-button {
   margin-top: 20px;
   padding: 12px 28px;
@@ -108,6 +121,8 @@ nav a:hover {
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px #816EA7;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .cta-button:hover {
@@ -116,18 +131,21 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* Section Wrapper */
 .section {
   padding: 80px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+/* Section Headings */
 .section h2 {
   font-size: 2rem;
   color: #a68cf9;
   margin-bottom: 30px;
 }
 
+/* Decorated Card Style */
 .decorated {
   background: rgba(3, 3, 5, 0.7);
   border-radius: 20px;
@@ -137,12 +155,14 @@ nav a:hover {
   backdrop-filter: blur(4px);
 }
 
+/* Projects Container */
 .projects {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
+/* Individual Project Card */
 .project-card {
   flex: 1 1 300px;
   background-color: #2E236C;
@@ -158,6 +178,7 @@ nav a:hover {
   box-shadow: 0 0 25px rgba(166, 140, 249, 0.3);
 }
 
+/* Project Images */
 .project-img {
   width: 100%;
   height: 180px;
@@ -167,20 +188,32 @@ nav a:hover {
   box-shadow: 0 0 10px #433D8B;
 }
 
+/* Project Card Headings */
 .project-card h3 {
   color: #C8ACD6;
   margin-top: 0;
 }
 
+/* Project Links */
 .project-card a {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
   color: #a68cf9;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
+.project-card a:hover {
+  color: #C8ACD6;
+}
+
+/* Experience Items */
 .experience-item {
   margin-bottom: 30px;
 }
 
+/* Footer Styling */
 footer {
   text-align: center;
   padding: 30px;
@@ -188,6 +221,7 @@ footer {
   color: #aaa;
 }
 
+/* Contact Links */
 #contact a {
   color: #a68cf9;
   text-decoration: underline;
@@ -198,6 +232,7 @@ footer {
   color: #C8ACD6;
 }
 
+/* About Section Specific */
 #about {
   background: rgba(3, 3, 5, 0.7);
   padding: 60px 30px;
@@ -218,14 +253,4 @@ footer {
   color: #fff;
   line-height: 1.6;
 }
-.project-card a {
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 10px;
-  color: #a68cf9;
-  transition: color 0.3s ease;
-}
 
-.project-card a:hover {
-  color: #C8ACD6;
-}
