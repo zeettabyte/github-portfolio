@@ -1,125 +1,211 @@
-<style>
-  body {
-    background-color: rgb(236, 236, 250);
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity | Zhaire Robinson</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: rgb(236, 236, 250);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-  nav {
-    background-color: #eae9f8;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #dcd9f7;
-  }
+    nav {
+      background-color: #eae9f8;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #dcd9f7;
+    }
 
-  nav .profile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+    nav .profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
-  nav .profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
+    nav .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
 
-  nav ul li a {
-    text-decoration: none;
-    color: #5e4b8b;
-    font-weight: 500;
-  }
+    nav ul li a {
+      text-decoration: none;
+      color: #5e4b8b;
+      font-weight: 500;
+    }
 
-  main {
-    display: flex;
-    gap: 30px;
-    padding: 30px;
-  }
-
-  .column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding-right: 20px;
-  }
-
-  .column:last-child {
-    border-right: none;
-    padding-right: 0;
-  }
-
-  h2 {
-    color: #5e4b8b;
-    margin-bottom: 15px;
-  }
-
-  .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .project-card {
-    background-color: #f8f7fc;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-
-  .project-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-
-  .btn {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #dcd9f7;
-    color: #4a3f7b;
-    padding: 8px 15px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: #c4bff0;
-  }
-
-  footer {
-    background-color: #eae9f8;
-    padding: 20px 30px;
-    text-align: center;
-    color: #5e4b8b;
-    font-size: 0.9rem;
-    border-top: 1px solid #dcd9f7;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 900px) {
     main {
-      flex-direction: column;
-      padding: 20px;
+      display: flex;
+      gap: 30px;
+      padding: 30px;
     }
 
     .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      padding-right: 20px;
+    }
+
+    .column:last-child {
       border-right: none;
       padding-right: 0;
     }
-  }
-</style>
+
+    h2 {
+      color: #5e4b8b;
+      margin-bottom: 15px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #f8f7fc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #dcd9f7;
+      color: #4a3f7b;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #c4bff0;
+    }
+
+    footer {
+      background-color: #eae9f8;
+      padding: 20px 30px;
+      text-align: center;
+      color: #5e4b8b;
+      font-size: 0.9rem;
+      border-top: 1px solid #dcd9f7;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="profile">
+      <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img" />
+      <h1>Zhaire Robinson</h1>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Left Column -->
+    <div class="column">
+      <section>
+        <h2>Scripting</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Powershell Script</h3>
+            <img src="powershell.png" alt="Powershell Project" />
+            <a class="btn" href="Implement-PowershellScript.pdf" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Bash Script</h3>
+            <img src="bash.png" alt="Bash Project" />
+            <a class="btn" href="Implement-BashScript.pdf" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Coding</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Python Script</h3>
+            <img src="python.png" alt="Python Project" />
+            <a class="btn" href="Python-Project.pdf" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Java App</h3>
+            <img src="java.png" alt="Java Project" />
+            <a class="btn" href="Java-Project.pdf" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column">
+      <section>
+        <h2>Documentation</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Network Docs</h3>
+            <img src="network-docs.png" alt="Network Documentation" />
+            <a class="btn" href="Network-Docs.pdf" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Cybersecurity Guide</h3>
+            <img src="cyber-guide.png" alt="Cybersecurity Documentation" />
+            <a class="btn" href="Cybersecurity-Guide.pdf" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Presentations</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Cybersecurity Talk</h3>
+            <img src="presentation1.png" alt="Presentation 1" />
+            <a class="btn" href="Presentation1.pdf" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Network Analysis</h3>
+            <img src="presentation2.png" alt="Presentation 2" />
+            <a class="btn" href="Presentation2.pdf" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Zhaire Robinson | Criminology and Cybercrime Student</p>
+  </footer>
+</body>
+</html>
