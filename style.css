@@ -1,3 +1,4 @@
+
 /* General Body Styles */
 body {
   margin: 0;
@@ -151,7 +152,7 @@ nav a:hover {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  justify-content: center; /* 🔥 NEW */
+  justify-content: center;
 }
 
 .project-card {
@@ -172,7 +173,7 @@ nav a:hover {
   color: #4b3fae;
 }
 
-/* Project Images (NEW + UPDATED) */
+/* Project Images */
 .project-card img {
   width: 100%;
   height: 180px;
@@ -192,6 +193,20 @@ nav a:hover {
 .project-card a:hover,
 #contact a:hover {
   text-decoration: underline;
+}
+
+/* ========================= */
+/* EXPERIENCE BULLET STYLING */
+/* ========================= */
+
+.experience-item ul {
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 /* Footer */
