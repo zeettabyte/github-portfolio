@@ -151,6 +151,7 @@ nav a:hover {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: center; /* 🔥 NEW */
 }
 
 .project-card {
@@ -171,8 +172,8 @@ nav a:hover {
   color: #4b3fae;
 }
 
-/* Project Images */
-.project-img {
+/* Project Images (NEW + UPDATED) */
+.project-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -199,6 +200,7 @@ footer {
   padding: 30px;
   color: #777;
 }
+
 /* Dropdown Project Cards */
 details {
   cursor: pointer;
