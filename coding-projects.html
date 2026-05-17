@@ -1,23 +1,161 @@
-<div class="projects">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Projects | Zhaire Robinson</title>
+  <link rel="stylesheet" href="style.css" />
 
-  <div class="project-card">
-    <h3>
-      <a href="https://github.com/zeettabyte/github-portfolio" target="_blank">
-        Portfolio Website
-      </a>
-    </h3>
-    <img src="images/portfolio-site.png" alt="Portfolio Website Preview">
-    <p>Designed and built this responsive portfolio using HTML, CSS, and GitHub Pages.</p>
-  </div>
+  <style>
+    body {
+      background-color: rgb(236, 236, 250);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-  <div class="project-card">
-    <h3>
-      <a href="https://github.com/zeettabyte/password-generator" target="_blank">
-        Password Generator App
-      </a>
-    </h3>
-    <img src="images/password-generator.png" alt="Password Generator App">
-    <p>Created a secure password generator using JavaScript and Bootstrap.</p>
-  </div>
+    nav {
+      background-color: #eae9f8;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #dcd9f7;
+    }
 
-</div>
+    nav .profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    nav .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #5e4b8b;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #5e4b8b;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column; /* 🔥 stacked layout */
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background-color: #f8f7fc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #dcd9f7;
+      color: #4a3f7b;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #c4bff0;
+    }
+
+    footer {
+      background-color: #eae9f8;
+      padding: 20px 30px;
+      text-align: center;
+      color: #5e4b8b;
+      font-size: 0.9rem;
+      border-top: 1px solid #dcd9f7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="profile">
+      <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img" />
+      <h1>Zhaire Robinson</h1>
+    </div>
+
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <h2>Coding Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>
+          <a href="https://github.com/zeettabyte/github-portfolio" target="_blank">
+            Portfolio Website
+          </a>
+        </h3>
+        <img src="images/portfolio-site.png" alt="Portfolio Website">
+        <p>Designed and built this responsive portfolio using HTML, CSS, and GitHub Pages.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>
+          <a href="https://github.com/zeettabyte/password-generator" target="_blank">
+            Password Generator App
+          </a>
+        </h3>
+        <img src="images/password-generator.png" alt="Password Generator App">
+        <p>Created a secure password generator using JavaScript and Bootstrap.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Zhaire Robinson | Cybersecurity & IT Student</p>
+  </footer>
+
+</body>
+</html>
