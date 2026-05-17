@@ -1,54 +1,201 @@
-<div class="projects">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity | Zhaire Robinson</title>
 
-  <div class="project-card">
-    <h3>Case Study Analysis: Balancing Security and Privacy</h3>
-    <img src="images/sony-hack.png" alt="Sony Cyber Attack Case Study">
-    <p>Case study analysis of the 2014 Sony Cyber Attack incident.</p>
-    <a class="btn" href="Case-Study-2014-Sony.pdf" target="_blank">View Project (PDF)</a>
-  </div>
+  <link rel="stylesheet" href="style.css" />
 
-  <div class="project-card">
-    <h3>Breaking Down CISA (PowerPoint)</h3>
-    <img src="images/cisa.png" alt="CISA Project">
-    <p>Midterm group project analyzing cybersecurity policy and CISA.</p>
-    <a class="btn" href="Midterm-Group-Project-CISA.pdf" target="_blank">View Project (PDF)</a>
-  </div>
+  <style>
+    body {
+      background-color: rgb(236, 236, 250);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-  <div class="project-card">
-    <h3>Software Documentation of DMV License Plate System</h3>
-    <img src="images/dmv-software.png" alt="DMV Software Documentation">
-    <p>Detailed documentation and test cases for a JavaScript-based system.</p>
-    <a class="btn" href="Vehicle-License-Plate-Documentation.pdf" target="_blank">View Project (PDF)</a>
-  </div>
+    nav {
+      background-color: #eae9f8;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #dcd9f7;
+    }
 
-  <div class="project-card">
-    <h3>The Björk Stalker Essay</h3>
-    <img src="images/bjork-case.png" alt="Bjork Stalker Case">
-    <p>An essay analyzing a case that challenges traditional criminological theories.</p>
-    <a class="btn" href="Bjork-Stalker-Essay.pdf" target="_blank">View Project (PDF)</a>
-  </div>
+    nav .profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
-  <div class="project-card">
-    <h3>General Strain Theory Analysis</h3>
-    <img src="images/strain-theory.png" alt="General Strain Theory">
-    <p>Application of General Strain Theory to the Björk stalker case.</p>
-    <a class="btn" href="General-Strain-Theory.docx" target="_blank">View Project</a>
-  </div>
+    nav .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
-  <div class="project-card">
-    <h3>Global Cybersecurity Policy Framework</h3>
-    <img src="images/global-security.png" alt="Cybersecurity Policy Framework">
-    <p>International cybersecurity governance treaty presentation.</p>
-    <a class="btn" href="GCSC-Policy-Framework.pdf" target="_blank">View Project (PDF)</a>
-  </div>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
 
-</div>
+    nav ul li a {
+      text-decoration: none;
+      color: #5e4b8b;
+      font-weight: 500;
+    }
 
+    /* MAIN LAYOUT (SINGLE COLUMN) */
+    main {
+      padding: 30px;
+    }
 
+    h2 {
+      color: #5e4b8b;
+      margin-bottom: 20px;
+    }
+
+    /* PROJECT GRID (SINGLE COLUMN STACK) */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* CARD STYLE (MATCHES YOUR OTHER PAGES) */
+    .project-card {
+      background-color: #f8f7fc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(123, 92, 250, 0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .project-card h3 {
+      color: #5e4b8b;
+    }
+
+    /* BUTTON STYLE */
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #dcd9f7;
+      color: #4a3f7b;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background-color: #c4bff0;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #eae9f8;
+      padding: 20px 30px;
+      text-align: center;
+      color: #5e4b8b;
+      font-size: 0.9rem;
+      border-top: 1px solid #dcd9f7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="profile">
+      <img src="your-photo.jpg" alt="Zhaire Robinson headshot" class="profile-img" />
+      <h1>Zhaire Robinson</h1>
+    </div>
+
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <h2>Criminological Projects and Technical Documentation</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Case Study Analysis: Balancing Security and Privacy</h3>
+        <img src="images/sony-hack.png" alt="Sony Cyber Attack Case Study">
+        <p>Case study analysis of the 2014 Sony Cyber Attack incident.</p>
+        <a class="btn" href="Case-Study-2014-Sony.pdf" target="_blank">View Project (PDF)</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Breaking Down CISA (PowerPoint)</h3>
+        <img src="images/cisa.png" alt="CISA Project">
+        <p>Midterm group project analyzing cybersecurity policy and CISA.</p>
+        <a class="btn" href="Midterm-Group-Project-CISA.pdf" target="_blank">View Project (PDF)</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Software Documentation of DMV License Plate System</h3>
+        <img src="images/dmv-software.png" alt="DMV Software Documentation">
+        <p>Detailed documentation and test cases for a JavaScript-based system.</p>
+        <a class="btn" href="Vehicle-License-Plate-Documentation.pdf" target="_blank">View Project (PDF)</a>
+      </div>
+
+      <div class="project-card">
+        <h3>The Björk Stalker Essay</h3>
+        <img src="images/bjork-case.png" alt="Bjork Stalker Case">
+        <p>An essay analyzing a case that challenges traditional criminological theories.</p>
+        <a class="btn" href="Bjork-Stalker-Essay.pdf" target="_blank">View Project (PDF)</a>
+      </div>
+
+      <div class="project-card">
+        <h3>General Strain Theory Analysis</h3>
+        <img src="images/strain-theory.png" alt="General Strain Theory">
+        <p>Application of General Strain Theory to the Björk stalker case.</p>
+        <a class="btn" href="General-Strain-Theory.docx" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Global Cybersecurity Policy Framework</h3>
+        <img src="images/global-security.png" alt="Cybersecurity Policy Framework">
+        <p>International cybersecurity governance treaty presentation.</p>
+        <a class="btn" href="GCSC-Policy-Framework.pdf" target="_blank">View Project (PDF)</a>
+      </div>
+
+    </div>
+
+  </main>
 
   <footer>
     <p>&copy; 2025 Zhaire Robinson | Cybersecurity & IT Student</p>
   </footer>
+
 </body>
 </html>
 
